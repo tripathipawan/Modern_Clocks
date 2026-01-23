@@ -1,0 +1,47 @@
+body {
+  perspective: 1000px;
+}
+
+.clock {
+  transform-style: preserve-3d;
+  transition: transform 0.4s ease;
+}
+
+.clock:hover {
+  transform: rotateX(8deg) rotateY(-8deg);
+}
+
+.hand {
+  transform-origin: bottom center;
+}
+
+/* THEMES */
+.blue {
+  box-shadow: 0 0 40px #21046b;
+  background: #06002c;
+}
+
+.pink {
+  box-shadow: 0 10px 40px #ff62e7;
+  background: #f47fffc5;
+}
+
+.green {
+  box-shadow: inset 0 0 30px #00db12;
+  background: repeating-radial-gradient(circle, #111 0 6px, #000 6px 12px);
+}
+
+.yellow {
+  box-shadow: 0 0 40px #586c00;
+  background: #8f9200e6;
+}
+
+.orange {
+  box-shadow: 0 0 35px #8e4e01;
+  background: #914b00eb;
+}
+
+.white {
+  box-shadow: 0 0 35px #ffffff;
+  background: #fdfffd1a;
+}
